@@ -12,7 +12,7 @@ model = YOLO("yolov8n.pt")
 
 model.train(
     data="dataset.yml",
-    epochs=50,  # Increase epochs for better learning
+    epochs=30,  # Increase epochs for better learning
     imgsz=640,
     batch=16,  # Adjust batch size based on your system memory
     device="cpu",  # Use 'cuda' if you have GPU

@@ -1,8 +1,8 @@
 import cv2
 import os
 
-IMAGES_FOLDER = "dataset_sku/images/test"
-LABELS_FOLDER = "dataset_sku/labels/test"
+IMAGES_FOLDER = "dataset_1/train/images"
+LABELS_FOLDER = "dataset_1/train/labels"
 
 # Classes list (Same as dataset.yaml)
 CLASSES = ["Coca Cola", "Sprite", "Pepsi", "Mountain Dew", "7UP", "Fanta"]
@@ -33,5 +33,5 @@ def draw_boxes(image_path, label_path):
     cv2.destroyAllWindows()
 
 # Run visualization on one image
-test_image = "10a743af-bdaf-4486-be1c-41a269e7f8b1.jpg"  # Change this to an existing image name
+test_image = "2.jpg"  # Change this to an existing image name
 draw_boxes(f"{IMAGES_FOLDER}/{test_image}", f"{LABELS_FOLDER}/{test_image.replace('.jpg', '.txt')}")

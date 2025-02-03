@@ -2,8 +2,8 @@ import cv2
 import os
 
 # ✅ Input & Output Folder Paths
-IMAGES_FOLDER = "dataset_3/test/images"
-LABELS_FOLDER = "dataset_3/test/labels"
+IMAGES_FOLDER = "dataset_1/train/images"
+LABELS_FOLDER = "dataset_1/train/labels"
 
 # ✅ Ensure labels directory exists
 os.makedirs(LABELS_FOLDER, exist_ok=True)
